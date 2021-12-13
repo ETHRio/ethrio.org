@@ -46,4 +46,24 @@ layout: default
     </div>
   </section>
 
+  {% comment %}
+  Third section
+  {% endcomment %}
+  <section class="sec-home-three"
+    style="background: url('{{ page.section_three_background_image }}') no-repeat center center fixed; ">
+    <div class="container p-5 text-center">
+      <h1 class="fw-bolder text-secondary">
+        {{ page.section_three_title }}
+      </h1>
+      <h5 class="mt-2 fw-bold text-secondary">
+        {{ page.section_three_subtitle }}
+      </h5>
+      <div class="mt-5">
+        <button type="button" class="btn btn-lg btn-secondary">
+          {{ page.section_three_button_text }}
+        </button>
+      </div>
+    </div>
+  </section>
+
 </div>
