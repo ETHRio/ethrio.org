@@ -1,0 +1,18 @@
+- name: Social Change
+  icon: /assets/icons/social.svg
+- name: Planet Earth
+  icon: /assets/icons/earth.svg
+- name: Art and Artists
+  icon: /assets/icons/art.svg
+- name: Brazil's ecosystem
+  icon: /assets/icons/brazil.png
+- name: LATAM ecosystem
+  icon: /assets/icons/latam.svg
+- name: The Metaverse
+  icon: /assets/icons/meta.svg
+- name: Scaling Ethereum
+  icon: /assets/icons/ethereum.svg
+- name: NFT - Web3 Use Cases
+  icon: /assets/icons/nft.svg
+- name: DAOs and Governance
+  icon: /assets/icons/dao.svg

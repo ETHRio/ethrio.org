@@ -18,4 +18,6 @@ section_four_title: Location
 section_four_subtitle: "The <span class='fw-bold'>Museum of Tomorrow</span> An innovative, green, museum of the future."
 section_four_background_image: assets/images/back_sec_four.png
 section_four_button_text: Website
+section_five_heading: Event Themes
+section_five_background_image: assets/images/back_sec_five.png
 ---

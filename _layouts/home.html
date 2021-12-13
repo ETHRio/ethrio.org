@@ -116,4 +116,24 @@ layout: default
     </div>
   </section>
 
+  {% comment %}
+  Fifth section
+  {% endcomment %}
+  <section class="sec-home-five"
+    style="background: url('{{ page.section_five_background_image }}') no-repeat center center fixed; ">
+    <div class="container pt-5 pb-5">
+      <h1 class="fw-bold display-3 text-white">
+        {{ page.section_five_heading }}
+      </h1>
+      <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
+        {% for event_theme in site.data.event_themes %}
+          <div class="col text-center">
+            <img class="img-fluid" src="{{ event_theme.icon }}" alt="{{ event_theme.name }}">
+            <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
 </div>
