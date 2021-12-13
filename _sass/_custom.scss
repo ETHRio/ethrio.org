@@ -4,11 +4,15 @@
 */
 
 .sec-home-one,
-.sec-home-two {
+.sec-home-two,.sec-home-three,.sec-home-four {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
     // min-height: 800px;
+}
+
+.bg-yellow {
+    background-color: $yellow;
 }

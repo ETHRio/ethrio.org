@@ -76,12 +76,41 @@ layout: default
           <h3 class="mt-2 fw-normal text-dark">
             {{ page.section_three_subtitle }}
           </h3>
-          <p class="lead mt-5 text-dark">
-            <span class="fw-bold">{{ page.section_three_text_part_one_heading }}:&nbsp;</span>{{ page.section_three_text_part_one_content }}
+          <p class="lead mt-5 text-dark">{{ page.section_three_text_part_one_content }}
           </p>
-          <p class="lead mt-5 text-dark">
-            <span class="fw-bold">{{ page.section_three_text_part_two_heading }}:&nbsp;</span>{{ page.section_three_text_part_two_content }}
+          <p class="lead mt-5 text-dark">{{ page.section_three_text_part_two_content }}
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% comment %}
+  Fourth section
+  {% endcomment %}
+  <section class="sec-home-four vh-100"
+    style="background: url('{{ page.section_four_background_image }}') no-repeat center center fixed; ">
+    <div class="container pt-5 pb-5">
+      <div class="row mt-5 mb-5">
+        {% comment %}
+        The textual part of the section
+        {% endcomment %}
+        <div class="col-sm-12 col-md-4">
+          <div class="card bg-yellow">
+            <div class="card-body">
+              <h2 class="fw-bold text-white card-title">
+                {{ page.section_four_title }}
+              </h2>
+              <p class="lead fw-normal text-dark card-text">
+                {{ page.section_four_subtitle }}
+              </p>
+              <div>
+                <button type="button" class="btn btn-lg btn-light">
+                  {{ page.section_four_button_text }}
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
