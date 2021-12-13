@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="">
+
+  <div class="post-content">
+    {% comment %}
+    First section
+    {% endcomment %}
+    <section class="sec-home-first"
+      style="background: url('{{ page.section_one_background_image }}') no-repeat center center fixed; ">
+      <div class="container p-5">
+        <div class="display-1 fw-bolder text-primary">
+          {{ page.section_one_title }}
+        </div>
+        <div class="display-5 mt-2 fw-normal text-primary">
+          {{ page.section_one_subtitle }}
+        </div>
+        <div class="lead mt-5 text-dark">
+          {{ page.section_one_text }}
+        </div>
+        <div class="mt-5">
+          <button type="button" class="btn btn-lg btn-success">
+            {{ page.section_one_button_text }}
+          </button>
+        </div>
+      </div>
+    </section>
+    {{ content }}
+  </div>
+
+</div>
