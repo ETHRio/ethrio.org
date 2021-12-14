@@ -20,4 +20,6 @@ section_four_background_image: assets/images/back_sec_four.png
 section_four_button_text: Website
 section_five_heading: Event Themes
 section_five_background_image: assets/images/back_sec_five.png
+section_six_heading: Speakers
+section_six_background_color: 014a99
 ---

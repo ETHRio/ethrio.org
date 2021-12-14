@@ -44,14 +44,14 @@ layout: default
   {% endcomment %}
   <section class="sec-home-two"
     style="background: url('{{ page.section_two_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 pb-5 text-center">
+    <div class="container pt-5 text-center">
       <h1 class="fw-bolder text-secondary mt-5">
         {{ page.section_two_title }}
       </h1>
       <h5 class="mt-2 fw-bold text-secondary">
         {{ page.section_two_subtitle }}
       </h5>
-      <div class="mt-5 mb-5">
+      <div class="pb-5">
         <button type="button" class="btn btn-lg btn-secondary">
           {{ page.section_two_button_text }}
         </button>
@@ -127,10 +127,34 @@ layout: default
       </h1>
       <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
         {% for event_theme in site.data.event_themes %}
-          <div class="col text-center">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
-            <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
-          </div>
+        <div class="col text-center">
+          <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}"
+            alt="{{ event_theme.name }}">
+          <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% comment %}
+  Sixth section
+  {% endcomment %}
+  <section class="sec-home-six"
+    style="background-color: #{{ page.section_six_background_color }};">
+    <div class="container pt-5 pb-5">
+      <h1 class="fw-bold display-3 text-white">
+        {{ page.section_six_heading }}
+      </h1>
+      <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+        {% for speaker in site.data.speakers %}
+        <div class="col text-center">
+          <img class="img-fluid img-thumbnail" src="{{ site.url }}{{ site.baseurl }}{{ speaker.photo }}"
+            alt="{{ speaker.name }}">
+          <p class="fw-bold text-white mt-2">{{ speaker.name }}</p>
+          <p class="fw-normal text-white">{{ speaker.job_title }}</p>
+          <p class="fw-light text-white"><a href="{{ speaker.url }}">website</a></p>
+        </div>
         {% endfor %}
       </div>
     </div>
