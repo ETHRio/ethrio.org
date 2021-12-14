@@ -4,7 +4,7 @@ layout: default
 <div class="">
 
     {% comment %} First section {% endcomment %}
-    <section class="sec-home-one" style="background: url('{{ page.section_one_background_image }}') no-repeat; ">
+    <section id="about" class="section-background sec-home-one" style="background: url('{{ page.section_one_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <div class="row mt-5 mb-5 gy-5 justify-content-around">
                 {% comment %} The textual part of the section {% endcomment %}
@@ -33,7 +33,7 @@ layout: default
     </section>
 
     {% comment %} Second section {% endcomment %}
-    <section class="sec-home-two" style="background: url('{{ page.section_two_background_image }}') no-repeat; ">
+    <section id="tickets" class="section-background sec-home-two" style="background: url('{{ page.section_two_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <h1 class="fw-bolder text-secondary mt-5">
                 {{ page.section_two_title }}
@@ -50,7 +50,7 @@ layout: default
     </section>
 
     {% comment %} Third section {% endcomment %}
-    <section class="sec-home-three" style="background: url('{{ page.section_three_background_image }}') no-repeat; ">
+    <section id="event" class="section-background sec-home-three" style="background: url('{{ page.section_three_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <div class="row mt-5 mb-5">
                 {% comment %} The textual part of the section {% endcomment %}
@@ -71,7 +71,7 @@ layout: default
     </section>
 
     {% comment %} Fourth section {% endcomment %}
-    <section class="sec-home-four vh-100" style="background: url('{{ page.section_four_background_image }}') no-repeat; ">
+    <section id="venue" class="section-background sec-home-four vh-100" style="background: url('{{ page.section_four_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <div class="row mt-5 mb-5">
                 {% comment %} The textual part of the section {% endcomment %}
@@ -97,7 +97,7 @@ layout: default
     </section>
 
     {% comment %} Fifth section {% endcomment %}
-    <section class="sec-home-five" style="background: url('{{ page.section_five_background_image }}') no-repeat; ">
+    <section id="agenda" class="section-background sec-home-five" style="background: url('{{ page.section_five_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <h1 class="fw-bold display-3 text-white">
                 {{ page.section_five_heading }}
@@ -114,7 +114,7 @@ layout: default
     </section>
 
     {% comment %} Sixth section {% endcomment %}
-    <section class="sec-home-six" style="background-color: #{{ page.section_six_background_color }};">
+    <section id="speakers" class="section-background sec-home-six" style="background-color: #{{ page.section_six_background_color }};">
         <div class="container pt-5 pb-5">
             <h1 class="fw-bold display-3 text-white">
                 {{ page.section_six_heading }}
@@ -133,7 +133,7 @@ layout: default
     </section>
 
     {% comment %} Seventh section {% endcomment %}
-    <section class="sec-home-seven" style="background: url('{{ page.section_seven_background_image }}') no-repeat; ">
+    <section id="" class="section-background sec-home-seven" style="background: url('{{ page.section_seven_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <h1 class="fw-bolder text-secondary mt-5">
                 {{ page.section_seven_title }}
@@ -162,7 +162,7 @@ layout: default
     </section>
 
     {% comment %} Eighth section {% endcomment %}
-    <section class="sec-home-eight pt-5 pb-5" style="background: url('{{ page.section_eight_background_image }}') no-repeat; ">
+    <section id="contact" class="section-background sec-home-eight pt-5 pb-5" style="background: url('{{ page.section_eight_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6">
@@ -190,7 +190,7 @@ layout: default
     </section>
 
     {% comment %} Ninth section {% endcomment %}
-    <section class="sec-home-nine" style="background: url('{{ page.section_nine_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-nine" style="background: url('{{ page.section_nine_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <h1 class="fw-bolder text-white mt-5">
                 {{ page.section_nine_title }}

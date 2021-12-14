@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% for section in site.posts reversed %}
+<section class="section-{{ section.id }} {% if section.bg_image %}section-background{% endif %}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg.color %}background-color: {{ section.bg_color }};{% endif %}">
+    <div class="container py-5">
+        <div class="row my-5 gy-5 justify-content-around">
+            <div class="col-sm-12 col-md-8">
+                <h1 class="{{ section.css_classes_title }}">
+                    {{ section.title }}
+                </h1>
+                <h3 class="{{ section.css_classes_subtitle }}">
+                    {{ section.subtitle }}
+                </h3>
+                <p class="{{ section.css_classes_text }}">
+                    {{ section.text }}
+                </p>
+                {% if section.button_text %}
+                    <div class="mt-5">
+                        <button type="button" class="{{ section.css_classes_button }}" {% if section.css_inline_button %}style="{{ section.css_inline_button }}"{% endif %}>
+                        {{ page.section_one_button_text }}
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+            {% comment %} logo for the section {% endcomment %}
+            <div class="col-sm-12 col-md-4 text-center">
+                <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png">
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
