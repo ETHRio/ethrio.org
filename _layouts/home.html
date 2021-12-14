@@ -3,193 +3,190 @@ layout: default
 ---
 <div class="">
 
-  {% comment %}
-  First section
-  {% endcomment %}
-  <section class="sec-home-one"
-    style="background: url('{{ page.section_one_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 pb-5">
-      <div class="row mt-5 mb-5 gy-5 justify-content-around">
-        {% comment %}
-        The textual part of the section
-        {% endcomment %}
-        <div class="col-sm-12 col-md-8">
-          <h1 class="display-1 fw-bold text-primary">
-            {{ page.section_one_title }}
-          </h1>
-          <h3 class="display-5 mt-2 fw-normal text-primary">
-            {{ page.section_one_subtitle }}
-          </h3>
-          <p class="lead mt-5 text-dark">
-            {{ page.section_one_text }}
-          </p>
-          <div class="mt-5">
-            <button type="button" class="btn btn-lg btn-success" style="color: white;">
+    {% comment %} First section {% endcomment %}
+    <section class="sec-home-one" style="background: url('{{ page.section_one_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 pb-5">
+            <div class="row mt-5 mb-5 gy-5 justify-content-around">
+                {% comment %} The textual part of the section {% endcomment %}
+                <div class="col-sm-12 col-md-8">
+                    <h1 class="display-1 fw-bold text-primary">
+                        {{ page.section_one_title }}
+                    </h1>
+                    <h3 class="display-5 mt-2 fw-normal text-primary">
+                        {{ page.section_one_subtitle }}
+                    </h3>
+                    <p class="lead mt-5 text-dark">
+                        {{ page.section_one_text }}
+                    </p>
+                    <div class="mt-5">
+                        <button type="button" class="btn btn-lg btn-success" style="color: white;">
               {{ page.section_one_button_text }}
             </button>
-          </div>
+                    </div>
+                </div>
+                {% comment %} logo for the section {% endcomment %}
+                <div class="col-sm-12 col-md-4 text-center">
+                    <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png">
+                </div>
+            </div>
         </div>
-        {% comment %}
-        logo for the section
-        {% endcomment %}
-        <div class="col-sm-12 col-md-4 text-center">
-          <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png">
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  {% comment %}
-  Second section
-  {% endcomment %}
-  <section class="sec-home-two"
-    style="background: url('{{ page.section_two_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 text-center">
-      <h1 class="fw-bolder text-secondary mt-5">
-        {{ page.section_two_title }}
-      </h1>
-      <h5 class="mt-2 fw-bold text-secondary">
-        {{ page.section_two_subtitle }}
-      </h5>
-      <div class="pb-5">
-        <button type="button" class="btn btn-lg btn-secondary">
+    {% comment %} Second section {% endcomment %}
+    <section class="sec-home-two" style="background: url('{{ page.section_two_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 text-center">
+            <h1 class="fw-bolder text-secondary mt-5">
+                {{ page.section_two_title }}
+            </h1>
+            <h5 class="mt-2 fw-bold text-secondary">
+                {{ page.section_two_subtitle }}
+            </h5>
+            <div class="pb-5">
+                <button type="button" class="btn btn-lg btn-secondary">
           {{ page.section_two_button_text }}
         </button>
-      </div>
-    </div>
-  </section>
-
-  {% comment %}
-  Third section
-  {% endcomment %}
-  <section class="sec-home-three"
-    style="background: url('{{ page.section_three_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 pb-5">
-      <div class="row mt-5 mb-5">
-        {% comment %}
-        The textual part of the section
-        {% endcomment %}
-        <div class="col-sm-12 col-md-6">
-          <h1 class="display-1 fw-bold text-primary">
-            {{ page.section_three_title }}
-          </h1>
-          <h3 class="mt-2 fw-normal text-dark">
-            {{ page.section_three_subtitle }}
-          </h3>
-          <p class="lead mt-5 text-dark">{{ page.section_three_text_part_one_content }}
-          </p>
-          <p class="lead mt-5 text-dark">{{ page.section_three_text_part_two_content }}
-          </p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  {% comment %}
-  Fourth section
-  {% endcomment %}
-  <section class="sec-home-four vh-100"
-    style="background: url('{{ page.section_four_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 pb-5">
-      <div class="row mt-5 mb-5">
-        {% comment %}
-        The textual part of the section
-        {% endcomment %}
-        <div class="col-sm-12 col-md-4">
-          <div class="card bg-yellow">
-            <div class="card-body">
-              <h2 class="fw-bold text-white card-title">
-                {{ page.section_four_title }}
-              </h2>
-              <p class="lead fw-normal text-dark card-text">
-                {{ page.section_four_subtitle }}
-              </p>
-              <div>
-                <button type="button" class="btn btn-lg btn-light">
+    {% comment %} Third section {% endcomment %}
+    <section class="sec-home-three" style="background: url('{{ page.section_three_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 pb-5">
+            <div class="row mt-5 mb-5">
+                {% comment %} The textual part of the section {% endcomment %}
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="display-1 fw-bold text-primary">
+                        {{ page.section_three_title }}
+                    </h1>
+                    <h3 class="mt-2 fw-normal text-dark">
+                        {{ page.section_three_subtitle }}
+                    </h3>
+                    <p class="lead mt-5 text-dark">{{ page.section_three_text_part_one_content }}
+                    </p>
+                    <p class="lead mt-5 text-dark">{{ page.section_three_text_part_two_content }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% comment %} Fourth section {% endcomment %}
+    <section class="sec-home-four vh-100" style="background: url('{{ page.section_four_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 pb-5">
+            <div class="row mt-5 mb-5">
+                {% comment %} The textual part of the section {% endcomment %}
+                <div class="col-sm-12 col-md-4">
+                    <div class="card bg-yellow">
+                        <div class="card-body">
+                            <h2 class="fw-bold text-white card-title">
+                                {{ page.section_four_title }}
+                            </h2>
+                            <p class="lead fw-normal text-dark card-text">
+                                {{ page.section_four_subtitle }}
+                            </p>
+                            <div>
+                                <button type="button" class="btn btn-lg btn-light">
                   {{ page.section_four_button_text }}
                 </button>
-              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  {% comment %}
-  Fifth section
-  {% endcomment %}
-  <section class="sec-home-five"
-    style="background: url('{{ page.section_five_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 pb-5">
-      <h1 class="fw-bold display-3 text-white">
-        {{ page.section_five_heading }}
-      </h1>
-      <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
-        {% for event_theme in site.data.event_themes %}
-        <div class="col text-center">
-          <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}"
-            alt="{{ event_theme.name }}">
-          <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+    {% comment %} Fifth section {% endcomment %}
+    <section class="sec-home-five" style="background: url('{{ page.section_five_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 pb-5">
+            <h1 class="fw-bold display-3 text-white">
+                {{ page.section_five_heading }}
+            </h1>
+            <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
+                {% for event_theme in site.data.event_themes %}
+                <div class="col text-center">
+                    <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
+                    <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+    </section>
 
-  {% comment %}
-  Sixth section
-  {% endcomment %}
-  <section class="sec-home-six"
-    style="background-color: #{{ page.section_six_background_color }};">
-    <div class="container pt-5 pb-5">
-      <h1 class="fw-bold display-3 text-white">
-        {{ page.section_six_heading }}
-      </h1>
-      <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-        {% for speaker in site.data.speakers %}
-        <div class="col text-center">
-          <img class="img-fluid img-thumbnail" src="{{ site.url }}{{ site.baseurl }}{{ speaker.photo }}"
-            alt="{{ speaker.name }}">
-          <p class="fw-bold text-white mt-2">{{ speaker.name }}</p>
-          <p class="fw-normal text-white">{{ speaker.job_title }}</p>
-          <p class="fw-light text-white"><a href="{{ speaker.url }}">website</a></p>
+    {% comment %} Sixth section {% endcomment %}
+    <section class="sec-home-six" style="background-color: #{{ page.section_six_background_color }};">
+        <div class="container pt-5 pb-5">
+            <h1 class="fw-bold display-3 text-white">
+                {{ page.section_six_heading }}
+            </h1>
+            <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                {% for speaker in site.data.speakers %}
+                <div class="col text-center">
+                    <img class="img-fluid img-thumbnail" src="{{ site.url }}{{ site.baseurl }}{{ speaker.photo }}" alt="{{ speaker.name }}">
+                    <p class="fw-bold text-white mt-2">{{ speaker.name }}</p>
+                    <p class="fw-normal text-white">{{ speaker.job_title }}</p>
+                    <p class="fw-light text-white"><a href="{{ speaker.url }}">website</a></p>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
+    </section>
 
-  {% comment %}
-  Seventh section
-  {% endcomment %}
-  <section class="sec-home-seven"
-    style="background: url('{{ page.section_seven_background_image }}') no-repeat center center fixed; ">
-    <div class="container pt-5 text-center">
-      <h1 class="fw-bolder text-secondary mt-5">
-        {{ page.section_seven_title }}
-      </h1>
-      <h5 class="mt-5 fw-bold text-secondary">
-        {{ page.section_seven_subtitle_one }}
-      </h5>
-      <h5 class="mt-2 fw-bold text-secondary">
-        {{ page.section_seven_subtitle_two }}
-      </h5>
-      <div class="pb-5 mt-5">
-        <div class="row align-items-center gy-3">
-          <div class="col-sm-12 col-md-6">
-            <button type="button" class="btn btn-lg btn-outline-primary text-secondary">
+    {% comment %} Seventh section {% endcomment %}
+    <section class="sec-home-seven" style="background: url('{{ page.section_seven_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 text-center">
+            <h1 class="fw-bolder text-secondary mt-5">
+                {{ page.section_seven_title }}
+            </h1>
+            <h5 class="mt-5 fw-bold text-secondary">
+                {{ page.section_seven_subtitle_one }}
+            </h5>
+            <h5 class="mt-2 fw-bold text-secondary">
+                {{ page.section_seven_subtitle_two }}
+            </h5>
+            <div class="pb-5 mt-5">
+                <div class="row align-items-center gy-3">
+                    <div class="col-sm-12 col-md-6">
+                        <button type="button" class="btn btn-lg btn-outline-primary text-secondary">
               {{ page.section_seven_button_one_text }}
             </button>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <button type="button" class="btn btn-lg btn-outline-primary text-secondary">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <button type="button" class="btn btn-lg btn-outline-primary text-secondary">
               {{ page.section_seven_button_two_text }}
             </button>
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    {% comment %} Eighth section {% endcomment %}
+    <section class="sec-home-eight pt-5 pb-5" style="background: url('{{ page.section_eight_background_image }}') no-repeat center center fixed; ">
+        <div class="container pt-5 pb-5 text-center vh-100">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6">
+                    <form style="background-color: #ffd42d;" class="p-5">
+                        <h1 class="mb-5 fw-bold text-white">
+                            {{ page.section_eight_title }}
+                        </h1>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                            <label for="name">Name</label>
+                          </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                            <label for="email">Email address</label>
+                          </div>
+                          <div class="form-floating">
+                            <textarea class="form-control" placeholder="Message" id="message" style="height: 100px"></textarea>
+                            <label for="message">Message</label>
+                          </div>
+                        <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+                    </form>
+                </div>
+              </div>
+        </div>
+    </section>
 
 </div>

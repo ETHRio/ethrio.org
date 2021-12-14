@@ -28,4 +28,6 @@ section_seven_subtitle_two: Join us on telegram
 section_seven_background_image: assets/images/back_sec_seven.png
 section_seven_button_one_text: Volunteer
 section_seven_button_two_text: Speaker/Sponsor
+section_eight_title: Get in touch today !
+section_eight_background_image: assets/images/back_sec_eight.png
 ---
