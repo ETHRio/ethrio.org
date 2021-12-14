@@ -30,4 +30,8 @@ section_seven_button_one_text: Volunteer
 section_seven_button_two_text: Speaker/Sponsor
 section_eight_title: Get in touch today !
 section_eight_background_image: assets/images/back_sec_eight.png
+section_nine_title: Connect with the Eth Rio Community
+section_nine_subtitle: "Sponsors"
+section_nine_sponsor_email: "ester@ethrio.com.br"
+section_nine_background_image: assets/images/back_sec_nine.png
 ---

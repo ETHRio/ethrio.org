@@ -1,0 +1,6 @@
+- name: Telegram
+  icon: /assets/icons/telegram.png
+  link: "https://google.com"
+- name: Twitter
+  icon: /assets/icons/twitter.png
+  link: "https://google.com"
