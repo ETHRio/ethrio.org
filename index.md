@@ -8,7 +8,7 @@ section_one_button_text: Get in touch
 section_two_title: Tickets waiting list & updates
 section_two_subtitle: Tickets go on sale 2nd of January 2022
 section_two_background_image: assets/images/back_sec_two.png
-section_two_button_text: Enter Email
+section_two_button_text: Join waiting list
 section_three_title: The Event
 section_three_subtitle: Rio de Janeiro as a LATAM hub
 section_three_background_image: assets/images/back_sec_three.png
