@@ -42,9 +42,24 @@ layout: default
                 {{ page.section_two_subtitle }}
             </h5>
             <div class="mb-5 mt-5">
-                <button type="button" class="btn btn-lg btn-secondary">
-          {{ page.section_two_button_text }}
-        </button>
+
+<!-- Begin Mailchimp Signup Form -->
+
+
+<div class="" id="mc_embed_signup">
+<form action="https://ethrio.us20.list-manage.com/subscribe/post?u=afb08f78ce969d463af419af0&amp;id=6645fc90f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="row justify-content-center validate" target="_blank" novalidate="" _lpchecked="1">
+   <div id="mc_embed_signup_scroll" class="col-md-6">
+
+ <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required="" data-com.bitwarden.browser.user-edited="yes">
+   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_afb08f78ce969d463af419af0_6645fc90f3" tabindex="-1" value=""></div>
+   <div class="clear"><input type="submit" value="{{ page.section_two_button_text }}" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-secondary"></div>
+   </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
             </div>
         </div>
     </section>
@@ -85,7 +100,7 @@ layout: default
                                 {{ page.section_four_subtitle }}
                             </p>
                             <div>
-                                <button type="button" class="btn btn-lg btn-light">
+                                <button type="button" onclick="location.href='https://museudoamanha.org.br/en'" class="btn btn-lg btn-light">
                   {{ page.section_four_button_text }}
                 </button>
                             </div>
@@ -147,12 +162,12 @@ layout: default
             <div class="pb-5 mt-5">
                 <div class="row align-items-center gy-3">
                     <div class="col-sm-12 col-md-6">
-                        <button type="button" class="btn btn-lg btn-outline-primary text-secondary">
+                        <button onclick="location.href='https://ethrio.typeform.com/Volunteers'" type="button" class="btn btn-lg btn-outline-primary text-secondary">
               {{ page.section_seven_button_one_text }}
             </button>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <button type="button" class="btn btn-lg btn-outline-primary text-secondary">
+                        <button onclick="location.href='https://ethrio.typeform.com/sponsor-speaker'" type="button" class="btn btn-lg btn-outline-primary text-secondary">
               {{ page.section_seven_button_two_text }}
             </button>
                     </div>
@@ -162,6 +177,7 @@ layout: default
     </section>
 
     {% comment %} Eighth section {% endcomment %}
+    <!-- //
     <section id="contact" class="section-background sec-home-eight pt-5 pb-5" style="background: url('{{ page.section_eight_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <div class="row justify-content-center">
@@ -188,6 +204,7 @@ layout: default
               </div>
         </div>
     </section>
+    //-->
 
     {% comment %} Ninth section {% endcomment %}
     <section class="section-background sec-home-nine" style="background: url('{{ page.section_nine_background_image }}') no-repeat; ">
