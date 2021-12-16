@@ -1,6 +1,5 @@
-- name: about
+- name: #
 - name: tickets
 - name: event
 - name: venue
 - name: agenda
-- name: speakers
