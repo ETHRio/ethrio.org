@@ -5,45 +5,42 @@ layout: default
 {% for section in site.posts reversed %}
     <section class="section-{{ section.id }} {% if section.bg_image %}section-background{% endif %}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg.color %}background-color: {{ section.bg_color }};{% endif %}" id="section-{{ section.id }}">
         <div class="{{ section.css_classes_container }}">
-            {% comment %} Single column layout {% endcomment %}
-            {% if section.grid_columns == "1" %}
-                <div class="{{ section.css_classes_title }}">
-                    {{ section.title }}
-                </div>
-                <div class="{{ section.css_classes_subtitle }}">
-                    {{ section.subtitle }}
-                </div>
-                {% comment %} Adds Mailchimp subscription form {% endcomment %}
-                {% if section.has_mailchimp_form == "yes" %}
-                    {% include mailchimp.html %}
-                {% endif %}
-                {% comment %} Two column layout {% endcomment %}
-            {% else if section.grid_columns == "2" %}
-                <div class="{{ section.css_classes_row }}">
-                    <div class="{{ section.css_classes_col_one }}">
+            <div class="{{ section.css_classes_row }}">
+                <div class="{{ section.css_classes_col_one }}">
+                    {% if section.css_classes_title %}
                         <h1 class="{{ section.css_classes_title }}">
                             {{ section.title }}
                         </h1>
+                    {% endif %}
+                    {% if section.css_classes_subtitle %}
                         <h3 class="{{ section.css_classes_subtitle }}">
                             {{ section.subtitle }}
                         </h3>
+                    {% endif %}
+                    {% if  section.has_mailchimp_form == "yes" %}
+                        {% include mailchimp.html %}
+                    {% endif %}
+                    {% if section.css_classes_text %}
                         <p class="{{ section.css_classes_text }}">
                             {{ section.text }}
                         </p>
-                        {% if section.button_text %}
-                            <div class="mt-5">
-                                <button type="button" class="{{ section.css_classes_button }}" {% if section.css_inline_button %} style="{{ section.css_inline_button }}" {% endif %}>
-                                    {{ page.section_one_button_text }}
-                                </button>
-                            </div>
+                    {% endif %}
+                    {% if section.button_text %}
+                        <div class="mt-5">
+                            <button type="button" class="{{ section.css_classes_button }}" {% if section.css_inline_button %} style="{{ section.css_inline_button }}" {% endif %}>
+                                {{ page.section_one_button_text }}
+                            </button>
+                        </div>
+                    {% endif %}
+                </div>
+                {% if section.css_classes_col_two %}
+                    <div class="{{ section.css_classes_col_two }}">
+                        {% if section.has_logo == "yes" %}
+                            <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png">
                         {% endif %}
                     </div>
-                    {% comment %} logo for the section {% endcomment %}
-                    <div class="{{ section.css_classes_col_two }}">
-                        <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png">
-                    </div>
-                </div>
-            {% endif %}
+                {% endif %}
+            </div>
         </div>
     </section>
 {% endfor %}
