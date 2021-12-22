@@ -10,12 +10,12 @@ layout: default
                 <div class="{{ section.css_classes_col_one }}">
                     <div class="{{ section.css_classes_col_first_div }}">
                         <div class="{{ section.css_classes_col_second_div }}">
-                            {% if section.css_classes_title %}
-                                <h1 class="{{ section.css_classes_title }}">
+                            {% if section.title %}
+                                <h1 class="{{ section.css_classes_title }}{% if section.has_form == "yes" %} visually-hidden{% endif %}">
                                     {{ section.title }}
                                 </h1>
                             {% endif %}
-                            {% if section.css_classes_subtitle %}
+                            {% if section.subtitle %}
                                 <h3 class="{{ section.css_classes_subtitle }}">
                                     {{ section.subtitle }}
                                 </h3>
@@ -23,7 +23,7 @@ layout: default
                             {% if  section.has_mailchimp_form == "yes" %}
                                 {% include mailchimp.html %}
                             {% endif %}
-                            {% if section.css_classes_text %}
+                            {% if section.text %}
                                 <p class="{{ section.css_classes_text }}">
                                     {{ section.text }}
                                 </p>
@@ -90,6 +90,27 @@ layout: default
                             {% endif %}
                         </div>
                     </div>
+                    
+            {% if section.has_form == "yes" %}
+            <form style="background-color: {{ section.form_background_color }};" class="p-5">
+                <h1 class="{{ section.css_classes_title }}">
+                    {{ section.title }}
+                </h1>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                    <label for="name">Name</label>
+                  </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                    <label for="email">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Message" id="message" style="height: 100px"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+            </form>
+            {% endif %}
                 </div>
                 {% if section.css_classes_col_two %}
                     <div class="{{ section.css_classes_col_two }}">
