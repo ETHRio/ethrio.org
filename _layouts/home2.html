@@ -4,7 +4,7 @@ layout: default
 <div class="">
 
     {% comment %} First section {% endcomment %}
-    <section id="about" class="section-background sec-home-one" style="background: url('{{ page.section_one_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-one" id="about" style="background: url('{{ page.section_one_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <div class="row mt-5 mb-5 gy-5 justify-content-around">
                 {% comment %} The textual part of the section {% endcomment %}
@@ -19,9 +19,9 @@ layout: default
                         {{ page.section_one_text }}
                     </p>
                     <div class="mt-5">
-                        <button type="button" class="btn btn-lg btn-success" style="color: white;">
-              {{ page.section_one_button_text }}
-            </button>
+                        <button class="btn btn-lg btn-success" style="color: white;" type="button">
+                            {{ page.section_one_button_text }}
+                        </button>
                     </div>
                 </div>
                 {% comment %} logo for the section {% endcomment %}
@@ -33,7 +33,7 @@ layout: default
     </section>
 
     {% comment %} Second section {% endcomment %}
-    <section id="tickets" class="section-background sec-home-two" style="background: url('{{ page.section_two_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-two" id="tickets" style="background: url('{{ page.section_two_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <h1 class="fw-bolder text-secondary mt-5">
                 {{ page.section_two_title }}
@@ -43,29 +43,29 @@ layout: default
             </h5>
             <div class="mb-5 mt-5">
 
-<!-- Begin Mailchimp Signup Form -->
+                <!-- Begin Mailchimp Signup Form -->
 
 
-<div class="" id="mc_embed_signup">
-<form action="https://ethrio.us20.list-manage.com/subscribe/post?u=afb08f78ce969d463af419af0&amp;id=6645fc90f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="row justify-content-center validate" target="_blank" novalidate="" _lpchecked="1">
-   <div id="mc_embed_signup_scroll" class="col-md-6">
+                <div class="" id="mc_embed_signup">
+                    <form _lpchecked="1" action="https://ethrio.us20.list-manage.com/subscribe/post?u=afb08f78ce969d463af419af0&amp;id=6645fc90f3" class="row justify-content-center validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                        <div class="col-md-6" id="mc_embed_signup_scroll">
 
- <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required="" data-com.bitwarden.browser.user-edited="yes">
-   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_afb08f78ce969d463af419af0_6645fc90f3" tabindex="-1" value=""></div>
-   <div class="clear"><input type="submit" value="{{ page.section_two_button_text }}" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-secondary"></div>
-   </div>
-</form>
-</div>
+                            <input class="form-control email" data-com.bitwarden.browser.user-edited="yes" id="mce-EMAIL" name="EMAIL" placeholder="email address" required="" type="email" value="">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;"><input name="b_afb08f78ce969d463af419af0_6645fc90f3" tabindex="-1" type="text" value=""></div>
+                            <div class="clear"><input type="submit" value="{{ page.section_two_button_text }}" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-secondary"></div>
+                        </div>
+                    </form>
+                </div>
 
-<!--End mc_embed_signup-->
+                <!--End mc_embed_signup-->
 
             </div>
         </div>
     </section>
 
     {% comment %} Third section {% endcomment %}
-    <section id="event" class="section-background sec-home-three" style="background: url('{{ page.section_three_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-three" id="event" style="background: url('{{ page.section_three_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <div class="row mt-5 mb-5">
                 {% comment %} The textual part of the section {% endcomment %}
@@ -86,7 +86,7 @@ layout: default
     </section>
 
     {% comment %} Fourth section {% endcomment %}
-    <section id="venue" class="section-background sec-home-four vh-100" style="background: url('{{ page.section_four_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-four vh-100" id="venue" style="background: url('{{ page.section_four_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <div class="row mt-5 mb-5">
                 {% comment %} The textual part of the section {% endcomment %}
@@ -100,9 +100,9 @@ layout: default
                                 {{ page.section_four_subtitle }}
                             </p>
                             <div>
-                                <button type="button" onclick="location.href='https://museudoamanha.org.br/en'" class="btn btn-lg btn-light">
-                  {{ page.section_four_button_text }}
-                </button>
+                                <button class="btn btn-lg btn-light" onclick="location.href='https://museudoamanha.org.br/en'" type="button">
+                                    {{ page.section_four_button_text }}
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -112,17 +112,17 @@ layout: default
     </section>
 
     {% comment %} Fifth section {% endcomment %}
-    <section id="agenda" class="section-background sec-home-five" style="background: url('{{ page.section_five_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-five" id="agenda" style="background: url('{{ page.section_five_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5">
             <h1 class="fw-bold display-3 text-white">
                 {{ page.section_five_heading }}
             </h1>
             <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
                 {% for event_theme in site.data.event_themes %}
-                <div class="col text-center">
-                    <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
-                    <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
-                </div>
+                    <div class="col text-center">
+                        <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
+                        <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+                    </div>
                 {% endfor %}
             </div>
         </div>
@@ -150,7 +150,7 @@ layout: default
     -->
 
     {% comment %} Seventh section {% endcomment %}
-    <section id="" class="section-background sec-home-seven" style="background: url('{{ page.section_seven_background_image }}') no-repeat; ">
+    <section class="section-background sec-home-seven" id="" style="background: url('{{ page.section_seven_background_image }}') no-repeat; ">
         <div class="container pt-5 pb-5 text-center">
             <h1 class="fw-bolder text-secondary mt-5">
                 {{ page.section_seven_title }}
@@ -164,14 +164,14 @@ layout: default
             <div class="pb-5 mt-5">
                 <div class="row align-items-center gy-3">
                     <div class="col-sm-12 col-md-6">
-                        <button onclick="location.href='https://ethrio.typeform.com/Volunteers'" type="button" class="btn btn-lg btn-outline-primary text-secondary">
-              {{ page.section_seven_button_one_text }}
-            </button>
+                        <button class="btn btn-lg btn-outline-primary text-secondary" onclick="location.href='https://ethrio.typeform.com/Volunteers'" type="button">
+                            {{ page.section_seven_button_one_text }}
+                        </button>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <button onclick="location.href='https://ethrio.typeform.com/sponsor-speaker'" type="button" class="btn btn-lg btn-outline-primary text-secondary">
-              {{ page.section_seven_button_two_text }}
-            </button>
+                        <button class="btn btn-lg btn-outline-primary text-secondary" onclick="location.href='https://ethrio.typeform.com/sponsor-speaker'" type="button">
+                            {{ page.section_seven_button_two_text }}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -215,12 +215,12 @@ layout: default
                 {{ page.section_nine_title }}
             </h1>
             <div class="mt-5">
-            {% for social in site.data.social_networks %}
-                <a href="{{ social.link }}" target="_blank" style="margin-left: 20px;"><img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ social.icon }}" alt="{{ social.name }}" style="height: 30px; width: auto;"></a>
-            {% endfor %}
+                {% for social in site.data.social_networks %}
+                    <a href="{{ social.link }}" target="_blank" style="margin-left: 20px;"><img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ social.icon }}" alt="{{ social.name }}" style="height: 30px; width: auto;"></a>
+                {% endfor %}
             </div>
             <h5 class="mt-5 fw-normal text-white">
-                <a href="mailto:{{ page.section_nine_sponsor_email }}" class="text-white text-decoration-none">{{ page.section_nine_subtitle }}:&nbsp;{{ page.section_nine_sponsor_email }}</a>
+                <a class="text-white text-decoration-none" href="mailto:{{ page.section_nine_sponsor_email }}">{{ page.section_nine_subtitle }}:&nbsp;{{ page.section_nine_sponsor_email }}</a>
             </h5>
             <div class="d-flex justify-content-between text-white mt-5">
                 <div class="align-self-center">&copy;&nbsp;{{ 'now' | date: "%Y" }}</div>

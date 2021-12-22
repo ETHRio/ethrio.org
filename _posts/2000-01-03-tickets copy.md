@@ -1,0 +1,35 @@
+---
+#######################
+## To keep any param unused, just leave its value as empty. Nothing after the : for the param
+#######################
+########################
+# Required params for each section
+id: 2 # id of the section used for id'ing the section in classes
+title: "Tickets waiting list & updates"
+subtitle: "Tickets go on sale 2nd of January 2022"
+text: ""
+bg_color: # please use hex values
+bg_image: "/assets/images/back_sec_two.png" # please save images in assets folder. Prepend with a / eg. /assets/images..
+grid_columns: "1" # grid columns to align content in larger screens
+###########################
+# Optional params
+button_text: "Get in touch" # Call-to-action button
+has_mailchimp_form: "yes"
+#################################
+# Container class
+css_class_container: "container pt-5 pb-5 text-center"
+#################################
+# CSS classes for the params above
+css_classes_title: "fw-bolder text-secondary mt-5 fs-1"
+css_classes_subtitle: "mt-2 fw-bold text-secondary mt-3 fs-5"
+css_classes_text: ""
+css_classes_button: ""
+css_classes_grid_row: ""
+css_classes_grid_columns: ""
+#################################
+# Inline CSS classes for params above
+css_inline_title: 
+css_inline_subtitle:
+css_inline_text:
+css_inline_button: ""
+---
