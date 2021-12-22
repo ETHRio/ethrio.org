@@ -34,6 +34,16 @@ layout: default
                                     </button>
                                 </div>
                             {% endif %}
+                            {% if section.has_fetched_data == "yes" %}
+                                <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
+                                    {% for event_theme in site.data.event_themes %}
+                                        <div class="col text-center">
+                                            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
+                                            <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
