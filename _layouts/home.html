@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% for section in site.posts reversed %}
+{% if section.is_active == "yes" %}
     <section class="section-{{ section.id }} {% if section.bg_image %}section-background{% endif %} {{ section.css_classes_section }}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg_color %}background-color: {{ section.bg_color }};{% endif %}" id="section-{{ section.id }}">
         <div class="{{ section.css_classes_container }}">
             <div class="{{ section.css_classes_row }}">
@@ -29,10 +30,32 @@ layout: default
                             {% endif %}
                             {% if section.button_text %}
                                 <div class="{{ section.css_classes_button_container }}">
-                                    <button type="button" class="{{ section.css_classes_button }}" {% if section.css_inline_button %} style="{{ section.css_inline_button }}" {% endif %} onclick="location.href='{{ section.button_link }}'">
+                                    <a href="{{ section.button_link }}">
+                                    <button type="button" class="{{ section.css_classes_button }}" {% if section.css_inline_button %} style="{{ section.css_inline_button }}" {% endif %}>
                                         {{ section.button_text }}
                                     </button>
+                                    </a>
                                 </div>
+                            {% endif %}
+                            {% if section.has_multiple_buttons == "yes" %}
+                            <div class="{{ section.css_classes_button_group_outer_div }}">
+                                <div class="{{ section.css_classes_button_group_inner_div }}">
+                                    <div class="{{ section.css_classes_button_container }}">
+                                        <a href="{{ section.button_one_link }}">
+                                        <button class="{{ section.css_classes_button }}" type="button">
+                                            {{ section.button_one_text }}
+                                        </button>
+                                        </a>
+                                    </div>
+                                    <div class="{{ section.css_classes_button_container }}">
+                                        <a href="{{ section.button_two_link }}">
+                                        <button class="{{ section.css_classes_button }}" type="button">
+                                            {{ section.button_two_text }}
+                                        </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                             {% endif %}
                             {% if section.has_fetched_data == "yes" %}
                                 <div class="{{ section.css_classes_fetched_row }}">
@@ -78,4 +101,5 @@ layout: default
             </div>
         </div>
     </section>
+    {% endif %}
 {% endfor %}
