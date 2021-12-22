@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for section in site.posts reversed %}
-    <section class="section-{{ section.id }} {% if section.bg_image %}section-background{% endif %} {{ section.css_classes_section }}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg.color %}background-color: {{ section.bg_color }};{% endif %}" id="section-{{ section.id }}">
+    <section class="section-{{ section.id }} {% if section.bg_image %}section-background{% endif %} {{ section.css_classes_section }}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg_color %}background-color: {{ section.bg_color }};{% endif %}" id="section-{{ section.id }}">
         <div class="{{ section.css_classes_container }}">
             <div class="{{ section.css_classes_row }}">
                 <div class="{{ section.css_classes_col_one }}">
@@ -35,13 +35,34 @@ layout: default
                                 </div>
                             {% endif %}
                             {% if section.has_fetched_data == "yes" %}
-                                <div class="my-3 py-3 row gx-5 gy-5 row-cols-sm-1 row-cols-md-3">
-                                    {% for event_theme in site.data.event_themes %}
-                                        <div class="col text-center">
-                                            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
-                                            <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
-                                        </div>
-                                    {% endfor %}
+                                <div class="{{ section.css_classes_fetched_row }}">
+                                    {% comment %}separate loops are required for all data files because for loops can't be rendered from jekyll placeholders{% endcomment %}
+                                    {% if section.is_event_data == "yes" %}
+                                        {% for event_theme in site.data.event_themes %}
+                                            <div class="{{ section.css_classes_fetched_col }}">
+                                                <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}">
+                                                <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+                                            </div>
+                                        {% endfor %}
+                                    {% endif %}
+                                    {% if section.is_speaker_data == "yes" %}
+                                    {% for speaker in site.data.speakers %}
+                                    <div class="{{ section.css_classes_fetched_col }}">
+                                        <img class="img-fluid img-thumbnail" src="{{ site.url }}{{ site.baseurl }}{{ speaker.photo }}" alt="{{ speaker.name }}">
+                                        {% if speaker.name %}
+                                        <p class="fw-bold text-white mt-2">{{ speaker.name }}</p>
+                                        {% endif %}
+                                        {% if speaker.job_title %}
+                                        <p class="fw-normal text-white">{{ speaker.job_title }}</p>
+                                        {% endif %}
+                                        {% if speaker.url %}
+                                        <p class="fw-light text-white">
+                                            <a href="{{ speaker.url }}">website</a>
+                                        </p>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
+                                    {% endif %}
                                 </div>
                             {% endif %}
                         </div>
