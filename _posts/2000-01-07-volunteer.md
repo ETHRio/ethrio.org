@@ -4,7 +4,7 @@
 #######################
 ########################
 # Required params for each section
-id: 7 # id of the section used for id'ing the section in classes
+name: volunteer # id of the section used for id'ing the section in classes
 is_active: "yes"
 title: "Get involved in LATAM's largest Ethereum event"
 subtitle: "<div class='mt-5'>Got more questions ?<br/><br/>Join us on <a href='https://t.me/EthRio'>telegram</a></div>"

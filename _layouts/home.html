@@ -4,7 +4,7 @@ layout: default
 
 {% for section in site.posts reversed %}
 {% if section.is_active == "yes" %}
-    <section class="section-{{ section.id }} {% if section.bg_image %}section-background{% endif %} {{ section.css_classes_section }}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg_color %}background-color: {{ section.bg_color }};{% endif %}" id="section-{{ section.id }}">
+    <section class="{{ section.name }} {% if section.bg_image %}section-background{% endif %} {{ section.css_classes_section }}" style="{% if section.bg_image %}background: url('{{ site.url }}{{ site.baseurl }}{{ section.bg_image }}') no-repeat;{% endif %}{% if section.bg_color %}background-color: {{ section.bg_color }};{% endif %}" id="{{ section.name }}">
         <div class="{{ section.css_classes_container }}">
             <div class="{{ section.css_classes_row }}">
                 <div class="{{ section.css_classes_col_one }}">

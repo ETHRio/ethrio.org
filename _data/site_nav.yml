@@ -1,5 +1,10 @@
-- name: #
+- name:
+  link: #
 - name: tickets
+  link: tickets
 - name: event
+  link: event
 - name: venue
+  link: venue
 - name: agenda
+  link: agenda
