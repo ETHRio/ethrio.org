@@ -71,7 +71,8 @@ layout: default
                                         {% for event_theme in site.data.event_themes %}
                                             <div class="{{ section.css_classes_fetched_col }}">
                                                 <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}{{ event_theme.icon }}" alt="{{ event_theme.name }}" style="height: 50px; width: auto;">
-                                                <p class="fw-bold text-dark mt-2">{{ event_theme.name }}</p>
+                                                <p class="fw-normal text-dark mt-3 text-secondary lead">{{ event_theme.name }}</p>
+                                                <hr class="bg-success mx-auto" style="height: 3px; width: 50%;"/>
                                             </div>
                                         {% endfor %}
                                     {% endif %}

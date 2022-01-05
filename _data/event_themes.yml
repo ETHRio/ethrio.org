@@ -1,18 +1,18 @@
-- name: Social Change
-  icon: /assets/icons/social.png
-- name: Planet Earth
-  icon: /assets/icons/earth.png
+- name: The Future of Web 3
+  icon: /assets/icons/future-of-web.png
+- name: ESG
+  icon: /assets/icons/esg.png
 - name: Art and Artists
-  icon: /assets/icons/art.png
-- name: Brazil's ecosystem
-  icon: /assets/icons/brazil.png
-- name: LATAM ecosystem
-  icon: /assets/icons/latam.png
-- name: The Metaverse
-  icon: /assets/icons/meta.png
+  icon: /assets/icons/art-and-artist.png
+- name: Brazilian Ecosystem
+  icon: /assets/icons/brazilian-ecosystem.png
+- name: Latam Ecosystem
+  icon: /assets/icons/latam-ecosystem.png
+- name: DeFi
+  icon: /assets/icons/defi.png
 - name: Scaling Ethereum
-  icon: /assets/icons/ethereum.png
-- name: NFT - Web3 Use Cases
+  icon: /assets/icons/scaling-ethereum.png
+- name: NFT- Gaming, Metaverse & Beyond
   icon: /assets/icons/nft.png
-- name: DAOs and Governance
+- name: DAOs & Governance
   icon: /assets/icons/dao.png
