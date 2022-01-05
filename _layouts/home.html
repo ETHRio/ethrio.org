@@ -127,8 +127,8 @@ layout: default
                 </div>
                 {% if section.css_classes_col_two %}
                     <div class="{{ section.css_classes_col_two }}">
-                        {% if section.has_logo == "yes" %}
-                            <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}/assets/images/logo.png">
+                        {% if section.has_col_two_image == "yes" %}
+                            <img class="img-fluid" alt="logo" src="{{ site.url }}{{ site.baseurl }}{{ section.col_two_image }}">
                         {% endif %}
                     </div>
                 {% endif %}
