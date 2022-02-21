@@ -2,7 +2,7 @@ title: ETHRio
 email: hus@ethrio.org
 description: >- # this means to ignore newlines until "baseurl:"
   March, 2022  
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://ethrio.github.io/ethrio.org" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: eth_rio
 github_username:  drhus
